@@ -5,4 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
        - name: hello-step
-         run: echo "Welcome"
+         run: |
+            echo "This Is Vivek"
+            echo "I am learning Devops"
