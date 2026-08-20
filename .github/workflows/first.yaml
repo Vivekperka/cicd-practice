@@ -13,6 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: build my command
-      run: echo "I builded"
+      run: echo "I have builded"
  
     
