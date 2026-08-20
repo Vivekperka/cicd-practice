@@ -8,14 +8,14 @@ jobs:
       run: echo "I builded"
   test:
     runs-on: ubuntu-latest
-    needs: build
+    needs: deploy
     steps:
      - name: builded test
        run: echo "I tested"
 
   deploy:
     runs-on: ubuntu-latest
-    needs: test
+    needs: build
     steps:
     - name: build my deploy
       run: echo "i deployed"
