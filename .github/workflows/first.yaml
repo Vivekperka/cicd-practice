@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: build my command
-      run: echo "i builded,${{vars.YOU_ME}}"
+      run: echo "i builded,${{secrets.TOMCAT_PASSWORD}}"
     
