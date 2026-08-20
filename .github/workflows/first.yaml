@@ -1,22 +1,14 @@
 name: Hello World
-on: workflow_dispatch
+on: 
+   push:
+     branches:
+      - main
+      - devops
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: build my command
       run: echo "I builded"
-  test:
-    runs-on: ubuntu-latest
-    needs: deploy
-    steps:
-     - name: builded test
-       run: echo "I tested"
-
-  deploy:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-    - name: build my deploy
-      run: echo "i am running deployed"
+ 
     
