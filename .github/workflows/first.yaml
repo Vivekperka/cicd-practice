@@ -1,5 +1,6 @@
 name: Hello World
 on: 
+
    push:
      branches:
       - main
@@ -7,12 +8,11 @@ on:
    pull_request:
     branches:
      - main
-        
+      
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: build my command
-      run: echo "I have builded"
- 
+
     
