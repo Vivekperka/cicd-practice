@@ -1,18 +1,9 @@
 name: Hello World
-on: 
-
-   push:
-     branches:
-      - main
-      - devops
-   pull_request:
-    branches:
-     - main
-      
+on:  push
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
     - name: build my command
-      run: echo "i builded"
+      run: echo "i builded,${{vars.YOU_ME}}"
     
