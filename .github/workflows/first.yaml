@@ -18,5 +18,5 @@ jobs:
     needs: build
     steps:
     - name: build my deploy
-      run: echo "i deployed"
+      run: echo "i am running deployed"
     
